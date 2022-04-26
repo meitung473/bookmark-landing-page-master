@@ -8,10 +8,10 @@ I'm still learning how to build a website and think more systematically.
 
 ### Screenshot
 - desktop
+<<<<<<< HEAD
 ![desktop](/img/desktop.jpeg)
 - mobile
 ![mobile](/img/mobile.jpeg)
-
 ### Links
 
 - [Solution URL](https://www.frontendmentor.io/solutions/responsive-sass-vanilla-js-ryetbdSSq)
