@@ -8,14 +8,14 @@ I'm still learning how to build a website and think more systematically.
 
 ### Screenshot
 - desktop
-![desktop]('./../img/desktop.jpeg')
+![desktop]('./img/desktop.jpeg')
 - mobile
-![mobile]('./../img/mobile.jpeg')
+![mobile]('./img/mobile.jpeg')
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/responsive-sass-vanilla-js-ryetbdSSq)
+- [Live Site URL](https://meitung473.github.io/bookmark-landing-page-master/build/index.html)
 
 ## My process
 1. slice block for components and section
@@ -47,4 +47,4 @@ I'm still learning how to build a website and think more systematically.
 ## Author
 
 - Website - [Rosa Hong](https://blog.rosa.tw/)
-- Frontend Mentor - [@Rosa Hong](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Rosa Hong](https://www.frontendmentor.io/profile/meitung473)
