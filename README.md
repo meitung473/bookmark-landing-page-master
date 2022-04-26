@@ -8,9 +8,9 @@ I'm still learning how to build a website and think more systematically.
 
 ### Screenshot
 - desktop
-![desktop]('./img/desktop.jpeg')
+![desktop]('/img/desktop.jpeg')
 - mobile
-![mobile]('./img/mobile.jpeg')
+![mobile]('/img/mobile.jpeg')
 
 ### Links
 
