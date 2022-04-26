@@ -1,0 +1,22 @@
+.navgation
+    max-width: 1440px
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+.list
+    &__item
+        a:not(.non-link)
+            text-decoration: none
+            color: $link-color
+            text-transform: uppercase
+            &:hover
+                color: $active-color
++breakpoint(md)
+    .list
+        &__item
+            a:not(.non-link)
+                color: $secondary-color
+                &:hover
+                    color: $active-color
+
+

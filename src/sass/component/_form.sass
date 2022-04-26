@@ -1,0 +1,59 @@
+.form
+    display: flex
+    flex-direction: column
+    margin-top: 20px
+    padding: 40px 32px
+    &-invaild
+        font-style: italic
+        display: flex
+        flex-direction: column
+        border-radius: 5px
+        overflow: hidden
+        padding: .2em
+        background-color: rgba(251, 88, 89, 1)
+        text-align: left
+        text-indent: .5em
+        font-size: 0
+        position: relative
+    &__input
+        
+        flex:1
+        border: none
+        padding: 12px 8px
+        border-radius: 5px
+        text-indent: 1em
+        &:focus
+            outline: none
+    &__submit
+        border: none
+        background: rgba(251, 88, 89, 1)
+        color: #fff
+        cursor: pointer
+        margin-top: 20px
+
+.form-invaild.invaild
+    font-size: .8em
+    &::after
+        content: ''
+        position: absolute
+        right:0
+        width: 20px
+        height: 20px
+        margin: 8px 15px 0
+        background: url('../../images/icon-error.svg') center center/contain no-repeat
+
+
++breakpoint(md)
+    .form
+        width: 50%
+        margin: 0 auto
+        flex-direction: row
+        align-items: flex-start
+        column-gap: 20px
+        &-invaild
+            flex: 1
+        &__submit
+            margin-top: 0
++breakpoint(lg)
+    .form
+        width: 40%

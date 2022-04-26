@@ -1,0 +1,50 @@
+.card-group
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    row-gap: 30px
+    margin-top: 30px
+
+.card
+    flex-grow: 1
+    display: flex
+    flex-direction: column
+    box-shadow: 0px 4px 4px 1px #E5E7F6
+    align-items: center
+    justify-content: center
+    text-align: center
+    border-radius: 10px
+    row-gap: 25px
+    padding: 25px 0 
+    background: url('../../images/bg-dots.svg') center 75%/contain no-repeat 
+    &__header
+        margin-top: 40px
+    &__description
+        h4
+            font-size: 1em
+        p
+            color: $secondary-color
+    &__cta
+        padding: 0 1.8em
+
+
++breakpoint(md)
+    .card-group
+        flex-direction: row
+        align-items: center
+        column-gap: 30px
+        justify-content: space-between
+        width: 90%
+        margin: 0 auto 0 
+    .card
+        flex: 1
+        &__cta
+            padding: 0
+    @for $i from 2 through 3
+        .card:nth-child(#{$i})
+            margin-top: $card-offset * $i
+
++breakpoint(lg)
+    .card-group
+        width: 80%

@@ -1,0 +1,53 @@
+.features
+    .imgbox
+        margin-bottom: 10%
+        margin-top: 60px
+        position: relative
+        img
+            opacity: 0
+            width:0
+            height:0
+            padding:0
+            transition: opacity .5s ease-in-out
+        &::after  
+            left: 0
+            bottom:0
+            height: 70%
+            width: 75%
+            border-radius: 0 150px 150px 0
+    .list
+        &__item
+            padding: 16px
+            text-align: center
+            position: relative
+            color: $secondary-color
+            &::after
+                content: ''
+                position: absolute
+                bottom:0
+                left:0
+                width: 100%
+                transform: scale(0)
+                transform-origin: center
+                transition: transform .3s ease
+                background-color: $active-color
+                height: .2em
+
++breakpoint(md)
+    .features
+        .imgbox
+            box-sizing: border-box
+            width: 50%
+        .description-group
+            box-sizing: border-box
+            width: 50% 
+            height: 100%
+    .list
+        flex-direction: row
+        justify-content: center
+        &__item
+            &:first-child.border
+                box-shadow: 0 -$list-border-with 0 transparent,0 $list-border-with 0 $secondary-color
+
+        
+            

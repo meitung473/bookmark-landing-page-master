@@ -1,0 +1,34 @@
+[data-icon="close"]
+    opacity: 0
+.hamburger
+    text-align: right
+    svg
+        cursor: pointer
+    +breakpoint(md)
+        display: none
+
+        
+input[type="checkbox"]
+    position: absolute
+    opacity: 0
+    z-index: -1
+    // is open
+    &:checked~.navgation
+        background-color: $deep-color
+        .hamburger svg
+            [data-icon="burger"]
+                    opacity: 0
+            [data-icon="close"]
+                    opacity: 1
+        .list
+            transform: translateX(0%)
+            background-color: $deep-color
+        .logo
+            [data-logo="text"],[data-logo="circle"]
+                fill: #fff
+            [data-logo="bookmark"]
+                fill: $deep-color
+        
+
+            
+        

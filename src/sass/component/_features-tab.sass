@@ -1,0 +1,56 @@
+.features
+    &__info
+        margin-top: 75px
+        position: relative
+        input[type="radio"]
+            position: absolute
+            opacity: 0
+            z-index: -1            
+    label
+        display: block
+        cursor: pointer
+        &:hover
+            color: $active-color
+
+.description-group
+    display: flex 
+    flex-direction: column 
+    padding: 0 40px
+    
+.description[data-feature]
+    @extend %collaspe-content
+    
+    
+
++breakpoint(md)
+    .features__info
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        
+    .description[data-feature]
+        text-align: left
+    .btn-group
+        justify-content: flex-start
+
+// radio to and make info change    
+@for $i from 1 through 3
+    input[type="radio"]:nth-child(#{$i})
+        &:checked~.list
+            .list__item:nth-child(#{$i})
+                color: $deep-color
+                &::after
+                    transform: scaleX(.6)
+                    +breakpoint(md)
+                        transform: scaleX(1)
+        &:checked~.imgbox
+            img:nth-child(#{$i})
+                @extend %expand-content
+        &:checked~.description-group
+            [data-feature]:nth-child(#{$i})
+                @extend %expand-content
+
+
+
+
+                 

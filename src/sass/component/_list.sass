@@ -1,0 +1,21 @@
+.list
+    width: 100%
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    &__item
+        padding: 16px
+        text-align: center
+        &:first-child.border
+            box-shadow: 0 $list-border-with*-1 0 $secondary-color, 0 $list-border-with 0 $secondary-color
+        &:nth-child(2).border,&:nth-child(3).border
+            box-shadow: 0 $list-border-with 0 $secondary-color
+        &.border-bottom
+            box-shadow: 0 $list-border-with 0 $secondary-color
++breakpoint(md)
+    .list
+        &__item
+            padding: 16px
+            text-align: center
+            &.border
+                box-shadow: none

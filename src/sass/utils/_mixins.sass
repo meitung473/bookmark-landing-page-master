@@ -1,0 +1,40 @@
+// media query 
+@mixin breakpoint($point)
+	@if $point == xl
+		@media screen and (min-width: 1200px)
+			@content
+	@if $point == lg
+		@media screen and (min-width: 1024px)
+			@content
+	@else if $point == md
+		@media screen and (min-width: 768px)
+			@content
+	@else if $point == sm
+		@media screen and (min-width: 576px)
+			@content
+
+// background-image url
+@mixin img-url($name,$format,$path: null)
+	$root: '../../img/'
+	$file: #{$name+'.'+$format}
+	$fullpath: null
+	@if $path
+		$fullpath: #{$root+$path+ '/'+$file}
+	@else
+		$fullpath:#{$root+$file}
+	background-image: url(quote(#{$fullpath}))
+
+// // prefix : 後面接瀏覽器 list
+@mixin vendor-prefix($declarations,$prefixes:())
+	@each $property,$value in $declarations
+		@each $prefix in $prefixes
+			#{'-'+$prefix+'-'+$property} : $value
+	
+	#{$property} : $value
+
+// //shape : circle
+@mixin circle($size,$color)
+	width: $size
+	height: $size
+	background-color: $color
+	border-radius: 50%

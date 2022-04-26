@@ -1,0 +1,42 @@
+.hero
+    margin-top: 132px
+    .imgbox
+        &::after  
+            height: 75%
+            width: 75%
+            right: 0
+            border-radius: 150px 0 0 150px
+    .description
+        padding: 50px 40px
+        &__text
+            margin-top: 30px
+
++breakpoint(md)
+    .hero
+        display: flex
+        flex-flow: nowrap
+        .imgbox
+            width: 50%
+            order: 1
+            display: flex
+            align-items: center
+            &::after  
+                top: 50%
+                height: 40%
+        .description
+            width: 50%
+            text-align: left
+        .btn-group
+            justify-content: flex-start
++breakpoint(lg)
+    .hero
+        align-items: center
+        .imgbox
+            &::after  
+                top: unset
+                height: 70%
+        .description
+            padding: 30px
+            &__title
+                font-size: 2em
+            
